@@ -54,7 +54,7 @@ card-btn:hover {
     position: absolute;top: -90px;left:407px}
     /* latest */
     .latest-deal{width: 100%;}
-.latest{display: flex;gap: 15px;max-width: 1180px;margin: 180px auto;
+.latest{display: flex;gap: 15px;max-width: 1180px;margin: 50px auto;
   color: white;text-align: center;
 }
 
@@ -67,7 +67,41 @@ border-radius: 10px;
 background-repeat: no-repeat;background-size: cover;width:100%; height: 290px;
    border-radius: 10px;
 }
+.latest-left1 h3{position: relative;top: 40%;}
+.latest-left1 h4{position: relative;top: 42%;text-decoration: underline;}
+.latest-left2 h3{position: relative;top: 40%;}
+.latest-left2 h4{position: relative;top: 42%;text-decoration: underline;}
+
 .latest-left2{background-image:url(../assets/deal-ana.png); 
   background-repeat: no-repeat;background-size: cover;width: 100%;height: 290px;
   border-radius: 10px;margin: 15px 0;
 }
+.latest-right h3{font-size: 30px;font-weight:600; position: relative;top: 43%;}
+.latest-right h4{font-size: 18px;font-weight: 600;text-decoration: underline;position: relative;top: 45%;}
+
+
+   /* SMALL MEDIA -QUERY */
+ @media screen and (max-width:576px) {
+.fresh-container{flex-direction: column-reverse;background-color:lightpink;} 
+.nav-menu  {display: none;} 
+.fresh-left{padding: 20px;}
+.plants-card{grid-template-columns: repeat(2, 1fr);}
+.lover,.latest{flex-direction: column;}
+.badge{display: none;}
+.plants{margin: 0 auto;}
+.lover{margin: 0 auto;}   
+.left-lover{max-width: 100%;margin-top: 100px;}
+.right-lover {max-width: 80%;}
+.latest-left,.latest-right {width: 100%;}
+.plants-txt{width: 90%;margin-top: 100px;}
+ }         
+   /* MEDIUAM MEDIA -QUERY */
+   @media screen and (min-width:576px)and (max-width:992px) {
+          main,header{ background-color: rgb(221, 255, 182);grid-template-areas: 
+            "header  header   header"
+            "nav      nav      nav"
+            "sidebar  main    main"
+            "advertise footer footer"
+            } 
+       } 
+           

@@ -37,6 +37,7 @@ max-width: 1180px;margin:0 auto;padding: 10px 0;
 .plants-card{display: grid;grid-template-columns: repeat(4, 1fr);
   justify-content: center;gap: 10px;}
 .card{text-align:center;}
+.card:hover{box-shadow: 5px 10px 10px orangered}
 .card h3{font-size: 15px;}
 .card h3{font-weight:600;margin: 9px 0;}
 .card-btn{background-color: #E95A08;color: white;padding:10px;border: none;
